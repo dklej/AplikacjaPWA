@@ -3,9 +3,9 @@
 @section('content')
 <section>
     <div class="d-flex justify-content-center">
-        <div class="card">
-            <div class="card-body" style="min-height: 12rem">
-                <h3 class="card-title card-title-dk"><b>{{ $book['title'] }}</b> </h3>
+        <div class="card card-dk">
+            <div class="card-body" >
+                <h3 class="card-title card-title-dk-item"><b>{{ $book['title'] }}</b> </h3>
                 <p class="card-text">
                     <div class="row">
                         <div class="col-9">

@@ -26,7 +26,7 @@
     <div id="page">
         <header>
             <nav class="navbar navbar-light navbar-dk">
-                <a class="navbar-brand" href={{ url('http://127.0.0.1:8000/index') }}>
+                <a class="navbar-brand" href={{ url('http://127.0.0.1:8000/') }}>
                 <img src="{{ asset('images/book-stack.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
                 Biblioteka tytułów książek
                 </a>
@@ -50,13 +50,13 @@
         </footer>
     </div>
     <script src="{{ asset('/sw.js') }}"></script>
-<script>
-    if (!navigator.serviceWorker.controller) {
-        navigator.serviceWorker.register("/sw.js").then(function (reg) {
-            console.log("Service worker has been registered for scope: " + reg.scope);
-        });
-    }
-</script>
+    <script>
+        if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register("/sw.js").then(function (reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    </script>
 </body>
 </html>
 
